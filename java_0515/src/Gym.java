@@ -26,6 +26,18 @@ public class Gym {
 //      p2 = temp;
 //    }
 
+
+//    /**
+//     * 根據上面方法的規則，從多個輸入的pokemon物件中
+//     * 找出贏家，並印出贏家資訊
+//     * @param pokemons
+//     */
+//    public void fight(Pokemon... pokemons) { 1 usage for(int i=0; i ‹ pokemons.length;i++) {
+//｝
+//｝
+
+
+
     // 判斷勝負
     if (p1.getLevel() > p2.getLevel()) {
       System.out.println(p1.getName() + " 勝利！");
