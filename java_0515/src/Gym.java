@@ -9,34 +9,11 @@ public class Gym {
     this.pokemon2 = pokemon2;
   }
 
-  // battle方法，隨機決定先攻，並依規則判斷勝負，回傳勝利寶可夢
+  // battle方法，依規則判斷勝負，回傳勝利寶可夢
   public Pokemon battle(Pokemon p1, Pokemon p2) {
     System.out.println("寶可夢對戰開始！");
     System.out.println("寶可夢1: " + p1.getName());
     System.out.println("寶可夢2: " + p2.getName());
-
-//    // 隨機決定先攻
-//    if (Math.random() < 0.5) {
-//      System.out.println(p1.getName() + " 先攻！");
-//    } else {
-//      System.out.println(p2.getName() + " 先攻！");
-//      // 交換順序
-//      Pokemon temp = p1;
-//      p1 = p2;
-//      p2 = temp;
-//    }
-
-
-//    /**
-//     * 根據上面方法的規則，從多個輸入的pokemon物件中
-//     * 找出贏家，並印出贏家資訊
-//     * @param pokemons
-//     */
-//    public void fight(Pokemon... pokemons) { 1 usage for(int i=0; i ‹ pokemons.length;i++) {
-//｝
-//｝
-
-
 
     // 判斷勝負
     if (p1.getLevel() > p2.getLevel()) {
@@ -61,6 +38,38 @@ public class Gym {
         return winner;
       }
     }
+  }
+
+  // 多寶可夢依序兩兩對戰，直到剩下一隻
+  public Pokemon battle(java.util.List<Pokemon> pokemons) {
+    java.util.List<Pokemon> current = new java.util.ArrayList<>(pokemons);
+    int round = 1;
+    while (current.size() > 1) {
+      System.out.println("\n=== Gym 第 " + round + " 輪對戰 ===");
+      java.util.List<Pokemon> next = new java.util.ArrayList<>();
+      for (int i = 0; i < current.size(); i += 2) {
+        if (i + 1 < current.size()) {
+          Pokemon p1 = current.get(i);
+          Pokemon p2 = current.get(i + 1);
+          System.out.println("參戰寶可夢資訊：");
+          p1.printInfo();
+          p2.printInfo();
+          Pokemon winner = battle(p1, p2);
+          System.out.println("勝者資訊：");
+          winner.printInfo();
+          next.add(winner);
+        } else {
+          System.out.println(current.get(i).getName() + " 無對手，自動晉級！");
+          current.get(i).printInfo();
+          next.add(current.get(i));
+        }
+      }
+      current = next;
+      round++;
+    }
+    System.out.println("最終勝者：");
+    current.get(0).printInfo();
+    return current.get(0);
   }
 
   // Getter and Setter methods

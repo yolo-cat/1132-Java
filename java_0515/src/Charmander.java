@@ -1,18 +1,15 @@
 //    透過繼承方式，減少重複程式碼的撰寫
 public class Charmander extends Pokemon {
 
-  public Charmander(String name) {
-
-    // 透過super關鍵字來呼叫父類別的建構子
-    // 這裡的super()會呼叫Pokemon類別的建構子
-    // 這裡的name, level, candy, attackPower, defencePower是父類別Pokemon的屬性
-    // 這裡的super()會呼叫Pokemon類別的建構子
-    // 這裡的name, level, candy, attackPower, defencePower是父類別Pokemon的屬性
+  public Charmander() {
     super(
-        Pokemon.generateRandomValue(1, 100),
-        Pokemon.generateRandomValue(1, 100),
-        Pokemon.generateRandomValue(1, 100),
-        Pokemon.generateRandomValue(1, 100));
+      Pokemon.generateRandomValue(1, 3),   // level
+      0,                                   // candy
+      Pokemon.generateRandomValue(8, 12),  // attackPower
+      Pokemon.generateRandomValue(1, 3)    // defencePower
+    );
+    int suffix = (int)(Math.random() * 100);
+    setName("小火龍" + String.format("%02d", suffix));
   }
 
   // 增加attackPower
@@ -35,16 +32,5 @@ public class Charmander extends Pokemon {
     } else {
       System.out.println("沒有足夠的糖果來增加防禦力");
     }
-  }
-
-  // 引入printinfo方法
-  public void printInfo() {
-    System.out.println("-------------------------");
-    System.out.println("寶可夢名稱: " + getName());
-    System.out.println("等級: " + getLevel());
-    System.out.println("糖果數量: " + getCandy());
-    System.out.println("攻擊力: " + getAttackPower());
-    System.out.println("防禦力: " + getDefencePower());
-    System.out.println("-------------------------");
   }
 }
