@@ -1,12 +1,13 @@
 package fcu.animal;
 
-public class cat extends animal {
-  public cat(String name) {
-    super(name);
-  }
+public class cat implements animal {
 
   @Override
-  public void makesound() {
+  public void makeSound() {
     System.out.println("meow");
+  }
+  @Override
+  public void sleep() {
+    System.out.println("cat is sleeping");
   }
 }
