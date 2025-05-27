@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/1132-Java.iml" filepath="$PROJECT_DIR$/.idea/1132-Java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oop0527-Interface/InnerOutter/InnerOutter.iml" filepath="$PROJECT_DIR$/oop0527-Interface/InnerOutter/InnerOutter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oop0527-Interface/PCDIY/PCDIY.iml" filepath="$PROJECT_DIR$/oop0527-Interface/PCDIY/PCDIY.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oop0527-Interface/Store/Store.iml" filepath="$PROJECT_DIR$/oop0527-Interface/Store/Store.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oop0515-Object/oop0515-Object.iml" filepath="$PROJECT_DIR$/oop0515-Object/oop0515-Object.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oop0522-AbstractAndInterface/oop0522-AbstractAndInterface.iml" filepath="$PROJECT_DIR$/oop0522-AbstractAndInterface/oop0522-AbstractAndInterface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oop0527-Interface/oop0527-Interface.iml" filepath="$PROJECT_DIR$/oop0527-Interface/oop0527-Interface.iml" />
+    </modules>
+  </component>
+</project>
