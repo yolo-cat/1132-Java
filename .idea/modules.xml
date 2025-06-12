@@ -19,7 +19,8 @@
       <module fileurl="file://$PROJECT_DIR$/oop0522-AbstractAndInterface/oop0522-AbstractAndInterface.iml" filepath="$PROJECT_DIR$/oop0522-AbstractAndInterface/oop0522-AbstractAndInterface.iml" />
       <module fileurl="file://$PROJECT_DIR$/oop0527-Interface/oop0527-Interface.iml" filepath="$PROJECT_DIR$/oop0527-Interface/oop0527-Interface.iml" />
       <module fileurl="file://$PROJECT_DIR$/oop0605-Class/oop0605-Class.iml" filepath="$PROJECT_DIR$/oop0605-Class/oop0605-Class.iml" />
-      <module fileurl="file://$PROJECT_DIR$/oop0610/oop0610.iml" filepath="$PROJECT_DIR$/oop0610/oop0610.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oop0610-Collections/oop0610-Collections.iml" filepath="$PROJECT_DIR$/oop0610-Collections/oop0610-Collections.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oop0612-Collections/oop0612-Collections.iml" filepath="$PROJECT_DIR$/oop0612-Collections/oop0612-Collections.iml" />
     </modules>
   </component>
 </project>
